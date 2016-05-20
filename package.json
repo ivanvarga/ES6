@@ -1,0 +1,21 @@
+{
+  "name": "es6",
+  "version": "0.0.1",
+  "description": "Simple ES6 walkthrough",
+  "main": "app.js",
+  "scripts": {
+    "start":"node app.js"
+  },
+  "repository": {
+    "type" : "git", 
+	"url" : "https://github.com/ivanvarga/ES6.git"
+  },
+  "homepage" : "https://github.com/ivanvarga/ES6.git",
+  "author": "Ivan Varga",
+  "license": "ISC",
+  "dependencies": {
+    "traceur": "^0.0.108",
+    "es6-module-loader":"^0.17.11",
+    "express":"^4.13.4"
+  }
+}
