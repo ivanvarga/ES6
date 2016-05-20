@@ -225,18 +225,6 @@ try {
     console.log(error);
 }
 
-
-//13. fat arrow symbol syntax forbids new line
-try {
-    (function () {
-        "use script";
-        let getPrice = () => 500;
-        console.log(typeof getPrice); //function
-    })();
-} catch (error) {
-    console.log(error);
-}
-
 //14. 
 try {
     (function () {

@@ -69,7 +69,7 @@ try {
         "use script";
        let prices = [12, 20, 18];
        let maxPrice = Math.max(...prices);
-       console.log(maxPrice);
+       console.log(maxPrice); //20
     })();
 } catch (error) {
     console.log(error);

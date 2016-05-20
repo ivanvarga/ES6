@@ -1,4 +1,4 @@
-//1. Hoisting
+//1. In ES5 variables get hoisted
 try {
     (function () {
         "use script";
@@ -31,7 +31,7 @@ try {
     console.log(error);
 }
 
-//4. same as var, let sets varibale to undefined if no value is defined 
+//4. Same as var, let sets variable to undefined if no value is defined 
 try {
     (function () {
         "use script";
@@ -43,7 +43,7 @@ try {
 }
 
 
-//5. variables defined with let have block scope
+//5. variables defined with let have block scope, instead function scope
 try {
     (function () {
         "use script";
@@ -57,7 +57,7 @@ try {
     console.log(error);
 }
 
-//6. 
+//6. Block scoping
 try {
     (function () {
         "use script";
@@ -71,7 +71,7 @@ try {
 }
 
 
-//7. temporal dead zone, compiler runs accross it, but it is called later
+//7. Compiler runs accross it, but it is called later
 try {
     (function () {
         "use script";
@@ -114,21 +114,6 @@ try {
     console.log(error);
 }
 
-//9. i is scoped to for loop, each iteration will get its own i variable
-//   so closure will close over that variable
-try {
-    (function () {
-        "use script";
-        let updateFunctions = [];
-        for (let i = 0; i <= 10; i++) {
-            updateFunctions.push(function () { return i; });
-        }
-        console.log(updateFunctions[0]()); //0
-    })();
-} catch (error) {
-    console.log(error);
-}
-
 //10. const is syntax which allows us to define constants, uppercase is optional
 try {
     (function () {
@@ -140,7 +125,7 @@ try {
     console.log(error);
 }
 
-//12. 
+//12. Const needs to intialized
 try {
     (function () {
         "use script";
